@@ -10,7 +10,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 100px 20px;
-  background-image: url('kitchen.jpg');
+  background-image: url('/kitchen.jpg');
   background-size: cover;
   height: 55vh;
 }
@@ -38,7 +38,6 @@ body {
   bottom: 0;
   background: inherit;
   filter: blur(40px);
-  /* More subtle blur */
   z-index: -1;
 }
 
@@ -91,10 +90,7 @@ textarea {
   margin-bottom: 20px;
 }
 
-/* input:focus,
-textarea:focus {
-  border-color: #007BFF;
-} */
+
 
 textarea {
   resize: vertical;

@@ -6,13 +6,6 @@ html {
 
 }
 
-/* .container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  color: #fff;
-} */
-
 
 .hero-section {
   display: flex;
@@ -20,7 +13,7 @@ html {
   justify-content: center;
   align-items: center;
   padding: 100px 20px;
-  background-image: url('bg.jpg');
+  background-image: url('/bg.jpg');
   background-size: cover;
   height: 60vh;
 
