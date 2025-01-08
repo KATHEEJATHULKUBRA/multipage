@@ -1,0 +1,150 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7fc;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px;
+  background-image: url('kitchen.jpg');
+  background-size: cover;
+  height: 55vh;
+}
+
+.contact-box {
+  position: relative;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  width: 550px;
+  height: 450px;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  filter: blur(40px);
+  /* More subtle blur */
+  z-index: -1;
+}
+
+h1 {
+  text-align: center;
+  color: #033216;
+}
+
+p {
+  text-align: center;
+  color: rgb(35, 32, 32);
+}
+
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+input {
+  padding: 10px;
+  width: 300px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  color: white;
+
+  transition: border-color 0.3s ease;
+}
+
+textarea {
+  padding: 5px;
+  width: 310px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+
+  color: white;
+  transition: border-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+/* input:focus,
+textarea:focus {
+  border-color: #007BFF;
+} */
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.submit-button {
+
+  margin: auto;
+  background-color: #033216;
+  color: white;
+  width: 320px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: transparent;
+  color: #033216;
+  border: 2px solid #033216;
+}
+
+.submit-button:focus {
+  outline: none;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 600px) {
+  .contact-box {
+    padding: 20px;
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .form-group {
+    gap: 15px;
+  }
+
+  .submit-button {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+}
